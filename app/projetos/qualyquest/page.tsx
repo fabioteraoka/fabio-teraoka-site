@@ -26,7 +26,7 @@ export default function QualyQuestProject() {
                 <p className="site-page-lead">Uma plataforma web que conecta processos de garantia da qualidade, gestão de não conformidades, auditorias, controle documental e competências técnicas em um ambiente integrado.</p>
                 <div className="project-detail-actions">
                   <a className="project-detail-primary" href="https://qualyquest.onrender.com" target="_blank" rel="noreferrer">Abrir demonstração ↗</a>
-                  <a href="https://github.com/fabioteraoka/QualyQuest" target="_blank" rel="noreferrer">Ver código-fonte ↗</a>
+                  <a className="project-detail-secondary" href="https://github.com/fabioteraoka/QualyQuest" target="_blank" rel="noreferrer">Ver código-fonte ↗</a>
                 </div>
               </header>
 
@@ -91,7 +91,7 @@ export default function QualyQuestProject() {
                 <p>Projeto autoral desenvolvido por Fábio Teraoka, reunindo experiência em engenharia aeronáutica, gestão da qualidade e processos operacionais com desenvolvimento de aplicações digitais.</p>
                 <div className="project-detail-actions">
                   <a className="project-detail-primary" href="https://qualyquest.onrender.com" target="_blank" rel="noreferrer">Explorar aplicação ↗</a>
-                  <a href="/projetos">Voltar aos projetos</a>
+                  <a className="project-detail-secondary" href="/projetos">Voltar aos projetos</a>
                 </div>
               </section>
             </div>
