@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PortalChrome } from "../components/PortalChrome";
 
 export const metadata: Metadata = {
   title: "Perfil Profissional | Fábio Teraoka",
@@ -60,6 +61,7 @@ const competencies = [
 
 export default function About() {
   return (
+    <PortalChrome active="sobre">
     <main className="site-page profile-page">
       <section className="profile-shell">
         <header className="profile-hero-card">
@@ -236,5 +238,6 @@ export default function About() {
         <Link className="back-link" href="/">← Voltar ao início</Link>
       </section>
     </main>
+    </PortalChrome>
   );
 }
