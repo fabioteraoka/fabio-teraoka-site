@@ -1,4 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Perfil Profissional | Fábio Teraoka",
+  description: "Trajetória profissional de Fábio Teraoka: Engenharia Aeronáutica, Supply Chain e Gestão da Qualidade.",
+  openGraph: {
+    title: "Fábio Teraoka | Perfil Profissional",
+    description: "Engenharia com visão de gestão. Gestão com profundidade técnica.",
+    type: "profile",
+  },
+};
 
 const pillars = [
   {
