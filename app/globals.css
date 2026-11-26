@@ -467,3 +467,27 @@
  .project-detail-actions{gap:12px}
 }
 @media(prefers-reduced-motion:reduce){.project-detail-actions a{transition:none}}
+
+
+/* Consistent action buttons for project cards and case studies */
+.project-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:18px}
+.project-link-button,.project-detail-actions .project-detail-primary,.project-detail-actions .project-detail-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:9px 12px;border:1px solid rgba(120,184,220,.24);border-radius:5px;background:rgba(120,184,220,.055);color:#b9cbd6;text-decoration:none;font:600 9px/1.2 var(--mono);letter-spacing:.015em;transition:background 160ms ease,border-color 160ms ease,color 160ms ease,transform 160ms ease}
+.project-link-button span{font-size:12px;line-height:1}
+.project-link-button.project-link-primary,.project-detail-actions .project-detail-primary{border-color:rgba(120,184,220,.48);background:rgba(83,145,181,.17);color:#e0f1f8}
+.project-link-button.project-link-quiet{background:transparent;border-color:rgba(120,184,220,.13);color:#91a6b3}
+.project-link-note{align-self:center;font:8px var(--mono);letter-spacing:.04em;color:#82939e;padding:0 3px}
+.project-detail-actions .project-detail-secondary{background:transparent;border-color:rgba(120,184,220,.2);color:#b8cbd6}
+.project-detail-actions a{font-size:9px}
+@media(hover:hover) and (pointer:fine){
+ .project-link-button:hover,.project-detail-actions .project-detail-primary:hover,.project-detail-actions .project-detail-secondary:hover{transform:translateY(-1px);border-color:rgba(120,184,220,.55);background:rgba(83,145,181,.2);color:#e5f5fc}
+ .project-link-button.project-link-quiet:hover{background:rgba(120,184,220,.07)}
+}
+@media(max-width:760px){
+ .project-links{gap:7px}
+ .project-link-button{min-height:35px;padding:9px 10px;font-size:8px}
+ .project-detail-actions{align-items:stretch}
+ .project-detail-actions a{min-height:36px}
+}
+@media(prefers-reduced-motion:reduce){
+ .project-link-button,.project-detail-actions .project-detail-primary,.project-detail-actions .project-detail-secondary{transition:none}
+}
