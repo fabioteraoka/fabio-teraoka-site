@@ -37,7 +37,7 @@ const pillars = [
 
 const milestones = [
   { period: "1992–1999", title: "Formação técnica e início na aviação", role: "Metalúrgica Brasitalia · VASP · Dataregis · Vórtice", text: "Experiências iniciais em mecânica, planejamento de manutenção, projetos mecânicos e consultoria de engenharia." },
-  { period: "1999–2011", title: "Engenharia em companhias aéreas", role: "Pantanal Linhas Aéreas · TAM", text: "Atuação em engenharia aeronáutica e liderança técnica, incluindo a posição de Superintendente Técnico de Engenharia na Pantanal e na TAM." },
+  { period: "1999–2011", title: "Engenharia em companhias aéreas", role: "Pantanal Linhas Aéreas · TAM", text: "Atuação em engenharia aeronáutica e liderança técnica, com a posição de Superintendente Técnico de Engenharia na Pantanal e Gerente Geral de Engenharia na TAM." },
   { period: "2012–2020", title: "Planejamento e gestão de engenharia", role: "Líder Aviation · Connect Cargo", text: "Experiência em planejamento técnico de manutenção e gestão de engenharia em operações aeronáuticas." },
   { period: "2021–2024", title: "Aeronavegabilidade e Supply Chain", role: "PCA Airworthiness · SkyOn Aeroengineering · Voar Aviation · Helipark", text: "Atuação em aeronavegabilidade, planejamento de manutenção e gestão da cadeia de suprimentos." },
   { period: "2025–atual", title: "Gestão de materiais e qualidade", role: "SAS / Smart Airport Systems · Impacto Aviation", text: "Material Logistics Manager na SAS e, desde fevereiro de 2026, Gerente de Qualidade na Impacto Aviation." },
@@ -68,7 +68,7 @@ export default function About() {
             <span className="profile-cover-mark">FT</span>
           </div>
           <div className="profile-hero-content">
-            <div className="profile-avatar" aria-label="Monograma Fábio Teraoka">FT</div>
+            <div className="profile-avatar"><img src="/images/fabio-profile.svg" alt="Retrato profissional de Fábio Teraoka" /></div>
             <div className="profile-hero-copy">
               <p className="profile-overline">ENGENHARIA · GESTÃO · AVIAÇÃO</p>
               <h1>Fábio Teraoka</h1>
