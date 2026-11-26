@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PortalChrome } from "../components/PortalChrome";
 
 export const metadata: Metadata = {
   title: "Experiência Profissional | Fábio Teraoka",
@@ -60,6 +61,7 @@ const visualReferences = [
 
 export default function Engineering() {
   return (
+    <PortalChrome active="engenharia">
     <main className="site-page career-page">
       <section className="site-page-main career-main">
         <div className="career-intro">
@@ -142,5 +144,6 @@ export default function Engineering() {
         <Link className="back-link" href="/sobre">← Voltar ao perfil profissional</Link>
       </section>
     </main>
+    </PortalChrome>
   );
 }
