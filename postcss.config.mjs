@@ -1,1 +1,2 @@
-const config = { plugins: {} };\nexport default config;\n
+const config = { plugins: {} };
+export default config;
