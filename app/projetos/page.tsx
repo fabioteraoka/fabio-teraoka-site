@@ -1,11 +1,11 @@
 import { PortalChrome } from "../components/PortalChrome";
 
 const projects = [
-  { name: "QualyQuest", category: "QUALIDADE · SGQ", description: "Solução autoral voltada à gestão de não conformidades e processos do Sistema de Gestão da Qualidade.", demo: "https://qualyquest.onrender.com", source: "https://github.com/fabioteraoka/QualyQuest", sourceLabel: "Código-fonte no GitHub", status: "PUBLICADO" },
+  { name: "QualyQuest", category: "QUALIDADE · SGQ", description: "Solução autoral voltada à gestão de não conformidades e processos do Sistema de Gestão da Qualidade.", demo: "https://qualyquest.onrender.com", details: "/projetos/qualyquest", source: "https://github.com/fabioteraoka/QualyQuest", sourceLabel: "Código-fonte no GitHub", status: "PUBLICADO" },
   { name: "Airworthiness Compliance", category: "ENGENHARIA AERONÁUTICA", description: "Aplicação dedicada ao acompanhamento e à inteligência de conformidade de aeronavegabilidade.", demo: "https://airworthinesscompliance.onrender.com", source: "https://github.com/fabioteraoka/Airworthiness-Compliance-", sourceLabel: "Código-fonte no GitHub", status: "PUBLICADO" },
   { name: "Design System", category: "TECNOLOGIA · UX/UI", description: "Projeto de sistema de design para organizar padrões visuais e componentes de interface.", demo: "https://design-system-9pu5.onrender.com", sourceLabel: "Repositório privado", status: "DEMONSTRAÇÃO" },
-  { name: "Impacto Dashboard", category: "GESTÃO · OPERAÇÕES", description: "Dashboard para gestão de ordens de serviço e materiais, conectando informações operacionais em uma visão gerencial.", demo: "https://dashboard-impacto-soex.onrender.com", sourceLabel: "Repositório privado", status: "ACESSO A VALIDAR" },
-  { name: "Painel da Vida", category: "PRODUTIVIDADE · AUTOMAÇÃO", description: "Painel pessoal para centralizar agenda, e-mails, tarefas e alertas, com integrações e automações em evolução.", demo: "https://painel-da-vida-git-main-fabioteraokas-projects.vercel.app/", source: "https://github.com/fabioteraoka/painel-da-vida", sourceLabel: "Código-fonte no GitHub", status: "EM EVOLUÇÃO" },
+  { name: "Impacto Dashboard", category: "GESTÃO · OPERAÇÕES", description: "Camada de consolidação e análise de ordens de serviço, materiais e serviços, com padronização de dados e relatórios executivos.", demo: "https://dashboard-impacto-soex.onrender.com", details: "/projetos/impacto-dashboard", sourceLabel: "Repositório privado", status: "ACESSO CONTROLADO" },
+  { name: "Painel da Vida", category: "PRODUTIVIDADE · AUTOMAÇÃO", description: "Painel pessoal para centralizar agenda, e-mails, tarefas e alertas, com integrações e automações em evolução.", demo: "https://painel-da-vida-git-main-fabioteraokas-projects.vercel.app/", details: "/projetos/painel-da-vida", source: "https://github.com/fabioteraoka/painel-da-vida", sourceLabel: "Código-fonte no GitHub", status: "EM EVOLUÇÃO" },
 ];
 
 export default function Projects() {
@@ -27,8 +27,8 @@ export default function Projects() {
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>
                     <div className="project-links">
-                      {project.name === "QualyQuest" ? <a className="project-link-button project-link-primary" href="/projetos/qualyquest">Conhecer projeto <span aria-hidden="true">↗</span></a> : null}
-                      <a className={project.name === "QualyQuest" ? "project-link-button" : "project-link-button project-link-primary"} href={project.demo} target="_blank" rel="noreferrer">Abrir aplicação <span aria-hidden="true">↗</span></a>
+                      {project.details ? <a className="project-link-button project-link-primary" href={project.details}>Conhecer projeto <span aria-hidden="true">↗</span></a> : null}
+                      <a className={project.details ? "project-link-button" : "project-link-button project-link-primary"} href={project.demo} target="_blank" rel="noreferrer">Abrir aplicação <span aria-hidden="true">↗</span></a>
                       {project.source ? <a className="project-link-button project-link-quiet" href={project.source} target="_blank" rel="noreferrer">{project.sourceLabel} <span aria-hidden="true">↗</span></a> : <span className="project-link-note">{project.sourceLabel}</span>}
                     </div>
                   </article>
