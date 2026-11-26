@@ -422,3 +422,48 @@
   .portal-primary-column .site-page-card,.portal-footer a,.portal-aside-nav a{transition:none}
   .portal-primary-column .site-page-card:hover{transform:none}
 }
+
+
+/* Project detail — QualyQuest */
+.project-detail-page .portal-main{margin-top:34px}
+.project-detail-intro{position:relative;overflow:hidden}
+.project-detail-eyebrow{font:9px var(--mono);letter-spacing:.14em;color:var(--blue2);margin:26px 0 -7px}
+.project-detail-actions{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:23px}
+.project-detail-actions a{font-size:10px;color:#b8cbd6;text-decoration:none}
+.project-detail-actions a:hover{color:var(--blue2)}
+.project-detail-actions .project-detail-primary{display:inline-flex;align-items:center;justify-content:center;padding:11px 15px;border:1px solid rgba(120,184,220,.42);border-radius:5px;background:rgba(83,145,181,.14);color:#d9edf7}
+.project-detail-section{margin-top:14px;padding:28px 30px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(145deg,rgba(17,27,37,.97),rgba(12,18,26,.97))}
+.project-detail-section h2{font:600 clamp(21px,2.5vw,29px)/1.2 var(--display);letter-spacing:-.04em;color:#e5edf2;margin:12px 0}
+.project-detail-section>p{font-size:11px;line-height:1.9;color:#98a8b2;max-width:850px}
+.project-detail-callout{display:grid;grid-template-columns:145px minmax(0,1fr);gap:18px;margin-top:22px;padding:17px;border-left:2px solid var(--blue);background:rgba(120,184,220,.055)}
+.project-detail-callout strong{font:9px var(--mono);letter-spacing:.08em;color:var(--blue2);text-transform:uppercase}
+.project-detail-callout span{font-size:10px;line-height:1.8;color:#bac8d0}
+.project-capability-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:20px}
+.project-capability-grid article{padding:17px;border:1px solid rgba(120,184,220,.13);border-radius:7px;background:rgba(255,255,255,.018)}
+.project-capability-grid article>span{font:9px var(--mono);color:var(--blue2)}
+.project-capability-grid h3{font:600 14px var(--display);color:#e1eaf0;margin:9px 0 6px}
+.project-capability-grid p,.project-detail-list li{font-size:10px;line-height:1.8;color:#91a1ab}
+.project-detail-list{padding-left:18px;margin:18px 0 0;display:flex;flex-direction:column;gap:11px}
+.project-detail-list strong{color:#cbd8df}
+.project-tech-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+.project-tech-tags span{padding:7px 9px;border:1px solid rgba(120,184,220,.18);border-radius:4px;background:rgba(120,184,220,.05);font:8px var(--mono);color:#b4c8d4}
+.project-detail-footnote{font-size:9px!important;color:#788c98!important;margin-top:16px}
+.project-screenshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.project-screenshot-grid figure{margin:0;overflow:hidden;border:1px solid rgba(120,184,220,.16);border-radius:7px;background:#0b131b}
+.project-screenshot-grid img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#14212c}
+.project-screenshot-grid figcaption{display:flex;flex-direction:column;gap:5px;padding:12px}
+.project-screenshot-grid figcaption strong{font:600 11px var(--display);color:#dce7ed}
+.project-screenshot-grid figcaption span{font-size:9px;line-height:1.65;color:#82949f}
+.project-detail-author{margin-bottom:12px}
+.project-detail-aside .project-aside-status{display:inline-block;margin:0 0 12px;padding:6px 8px;border:1px solid rgba(120,184,220,.25);border-radius:3px;font:8px var(--mono);letter-spacing:.08em;color:var(--blue2)}
+.project-tech-tags-aside{margin-top:0}
+.project-tech-tags-aside span{font-size:7px}
+.project-aside-note{font-size:9px;line-height:1.7;color:#748894;padding:0 4px}
+@media(max-width:760px){
+ .project-detail-page .portal-main{margin-top:20px}
+ .project-detail-section{padding:22px 18px}
+ .project-detail-callout{grid-template-columns:1fr;gap:8px}
+ .project-capability-grid,.project-screenshot-grid{grid-template-columns:1fr}
+ .project-detail-actions{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){.project-detail-actions a{transition:none}}
