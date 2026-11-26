@@ -203,7 +203,7 @@ export default function About() {
 
             <section className="profile-aside-card">
               <span className="profile-aside-label">RESUMO PROFISSIONAL</span>
-              <div className="profile-aside-fact"><strong>34 anos</strong><span>de trajetória desde 1992</span></div>
+              <div className="profile-aside-fact"><strong>Desde 1992</strong><span>mais de três décadas de trajetória</span></div>
               <div className="profile-aside-fact"><strong>Engenharia</strong><span>formação superior e técnica</span></div>
               <div className="profile-aside-fact"><strong>CREA</strong><span>registro profissional ativo</span></div>
             </section>
