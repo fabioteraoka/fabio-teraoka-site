@@ -27,6 +27,7 @@ export default function Projects() {
                     <h2>{project.name}</h2>
                     <p>{project.description}</p>
                     <div className="project-links">
+                      {project.name === "QualyQuest" ? <a href="/projetos/qualyquest">Conhecer projeto ↗</a> : null}
                       <a href={project.demo} target="_blank" rel="noreferrer">Abrir aplicação ↗</a>
                       {project.source ? <a href={project.source} target="_blank" rel="noreferrer">{project.sourceLabel} ↗</a> : <span>{project.sourceLabel}</span>}
                     </div>
