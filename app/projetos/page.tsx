@@ -5,35 +5,43 @@ const projects = [
     name: "QualyQuest",
     category: "QUALIDADE · SGQ",
     description: "Solução autoral voltada à gestão de não conformidades e processos do Sistema de Gestão da Qualidade.",
-    href: "https://qualyquest.onrender.com",
+    demo: "https://qualyquest.onrender.com",
+    source: "https://github.com/fabioteraoka/QualyQuest",
+    sourceLabel: "Código-fonte no GitHub",
     status: "PUBLICADO",
   },
   {
     name: "Airworthiness Compliance",
     category: "ENGENHARIA AERONÁUTICA",
     description: "Aplicação dedicada ao acompanhamento e à inteligência de conformidade de aeronavegabilidade.",
-    href: "https://airworthinesscompliance.onrender.com",
+    demo: "https://airworthinesscompliance.onrender.com",
+    source: "https://github.com/fabioteraoka/Airworthiness-Compliance-",
+    sourceLabel: "Código-fonte no GitHub",
     status: "PUBLICADO",
   },
   {
     name: "Design System",
     category: "TECNOLOGIA · UX/UI",
     description: "Projeto de sistema de design para organizar padrões visuais e componentes de interface.",
-    href: "https://design-system-9pu5.onrender.com",
+    demo: "https://design-system-9pu5.onrender.com",
+    sourceLabel: "Repositório privado",
     status: "DEMONSTRAÇÃO",
   },
   {
     name: "Impacto Dashboard",
     category: "GESTÃO · OPERAÇÕES",
     description: "Dashboard para gestão de ordens de serviço e materiais, conectando informações operacionais em uma visão gerencial.",
-    href: "https://dashboard-impacto-soex.onrender.com",
-    status: "ACESSO RESTRITO / A VALIDAR",
+    demo: "https://dashboard-impacto-soex.onrender.com",
+    sourceLabel: "Repositório privado",
+    status: "ACESSO A VALIDAR",
   },
   {
     name: "Painel da Vida",
     category: "PRODUTIVIDADE · AUTOMAÇÃO",
     description: "Painel pessoal para centralizar agenda, e-mails, tarefas e alertas, com integrações e automações em evolução.",
-    href: "https://painel-da-vida-git-main-fabioteraokas-projects.vercel.app/",
+    demo: "https://painel-da-vida-git-main-fabioteraokas-projects.vercel.app/",
+    source: "https://github.com/fabioteraoka/painel-da-vida",
+    sourceLabel: "Código-fonte no GitHub",
     status: "EM EVOLUÇÃO",
   },
 ];
@@ -62,7 +70,14 @@ export default function Projects() {
               <small>{project.category} · {project.status}</small>
               <h2>{project.name}</h2>
               <p>{project.description}</p>
-              <a href={project.href} target="_blank" rel="noreferrer">Acessar projeto ↗</a>
+              <div className="project-links">
+                <a href={project.demo} target="_blank" rel="noreferrer">Abrir aplicação ↗</a>
+                {project.source ? (
+                  <a href={project.source} target="_blank" rel="noreferrer">{project.sourceLabel} ↗</a>
+                ) : (
+                  <span>{project.sourceLabel}</span>
+                )}
+              </div>
             </article>
           ))}
         </div>
